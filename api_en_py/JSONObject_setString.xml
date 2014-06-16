@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+
+<name>setString()</name>
+
+<category>JSONObject</category>
+
+<subcategory>Method</subcategory>
+
+<type>method</type>
+
+<example>
+<image></image>
+<code><![CDATA[
+JSONObject json
+def setup(): 
+    json = JSONObject()
+    
+    json.setInt("count", 88)
+    json.setFloat("weight", 35.432)
+    json.setString("name", "celery")
+    json.setBoolean("isFruit", False)
+    count = json.getInt("count")
+    weight = json.getFloat("weight")
+    name = json.getString("name")
+    boolean isFruit = json.getBoolean("isFruit")
+    println(count + ", " + weight + ", " + name + ", " + isFruit)
+# Sketch prints:
+# 88, 35.432, celery, False
+]]></code>
+</example>
+
+<description><![CDATA[
+Inserts a new key/String pair into the <b>JSONObject</b> or, if a value with the specified key already exists, assigns a new value.
+]]></description>
+
+</root>

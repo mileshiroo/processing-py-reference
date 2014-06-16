@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+
+<name>getJSONArray()</name>
+
+<category>JSONArray</category>
+
+<subcategory>Method</subcategory>
+
+<type>method</type>
+
+<example>
+<image></image>
+<code><![CDATA[
+# The following short JSON file called "data.json" is parsed 
+# in the code below. It must be in the project's "data" folder.
+#
+# [
+#     [
+#         "name": "apple", "isFruit": True ,
+#         "name": "grape", "isFruit": True ,
+#         "name": "carrot", "isFruit": False 
+#     ],
+#     [
+#         "name": "lettuce", "isFruit": False ,
+#         "name": "plum", "isFruit": True ,
+#         "name": "cinnamon", "isFruit": False 
+#     ]
+# ]
+JSONArray json
+def setup(): 
+    json = loadJSONArray("data.json")
+    # Get the first array of elements
+    JSONArray values = json.getJSONArray(0)
+    
+    for i in range(values.size()): 
+        
+        JSONitem = values.getJSONObject(i)
+        name = item.getString("name")
+        boolean isFruit = item.getBoolean("isFruit")
+        println(name + ", " + isFruit)
+    
+# Sketch prints:
+# apple, True
+# grape, True
+# carrot, False
+]]></code>
+</example>
+
+<description><![CDATA[
+Retrieves the <b>JSONArray</b> with the associated index value.
+]]></description>
+
+</root>
