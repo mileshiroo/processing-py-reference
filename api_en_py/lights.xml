@@ -31,6 +31,7 @@ def setup():
     size(100, 100, P3D)
     background(0)
     noStroke()
+
 def draw(): 
     # Include lights() at the beginning
     # of draw() to keep them persistent 

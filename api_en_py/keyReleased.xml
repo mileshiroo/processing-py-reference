@@ -14,15 +14,18 @@
 # Click on the image to give it focus,
 # and then press any key.
 value = 0
-def draw(): 
+
+
+def draw():
     fill(value)
     rect(25, 25, 50, 50)
-def keyReleased(): 
+
+
+def keyReleased():
     if value == 0:
         value = 255
     else:
         value = 0
-    
 ]]></code>
 </example>
 

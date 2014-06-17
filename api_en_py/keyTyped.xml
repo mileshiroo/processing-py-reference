@@ -13,13 +13,22 @@
 <code><![CDATA[
 # Run this program to learn how each of these functions
 # relate to the others.
-def draw(): # Empty draw() needed to keep the program running
-def keyPressed(): 
-    println("pressed " + int(key) + " " + keyCode)
-def keyTyped(): 
-    println("typed " + int(key) + " " + keyCode)
-def keyReleased(): 
-    println("released " + int(key) + " " + keyCode)
+
+
+def draw():  # Empty draw() needed to keep the program running
+    pass
+
+
+def keyPressed():
+    println("pressed %s %d" % (key, keyCode))
+
+
+def keyTyped():
+    println("typed %s %d" % (key, keyCode))
+
+
+def keyReleased():
+    println("released %s %d" % (key, keyCode))
 ]]></code>
 </example>
 

@@ -11,9 +11,11 @@
 <example>
 <image></image>
 <code><![CDATA[
-def setup(): 
+def setup():
     frameRate(30)
-def draw(): 
+
+
+def draw():
     line(0, 0, width, height)
     println(frameCount)
 ]]></code>

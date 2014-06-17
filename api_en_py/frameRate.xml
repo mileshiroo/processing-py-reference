@@ -9,16 +9,18 @@
 <example>
 <image></image>
 <code><![CDATA[
-def setup(): 
-    frameRate(4)
 pos = 0
-def draw(): 
+
+def setup():
+    frameRate(4)
+
+
+def draw():
     background(204)
     pos += 1
     line(pos, 20, pos, 80)
     if pos > width:
         pos = 0
-    
 ]]></code>
 </example>
 

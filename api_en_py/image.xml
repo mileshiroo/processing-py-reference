@@ -11,11 +11,15 @@
 <example>
 <image>image_0.png</image>
 <code><![CDATA[
-PImage img
-def setup(): 
+img = None
+
+
+def setup():
     # Images must be in the "data" directory to load correctly
     img = loadImage("laDefense.jpg")
-def draw(): 
+
+
+def draw():
     image(img, 0, 0)
 ]]></code>
 </example>
@@ -24,13 +28,17 @@ def draw():
 <example>
 <image>image_1.png</image>
 <code><![CDATA[
-PImage img
-def setup(): 
+img = None
+
+
+def setup():
     # Images must be in the "data" directory to load correctly
     img = loadImage("laDefense.jpg")
-def draw(): 
+
+
+def draw():
     image(img, 0, 0)
-    image(img, 0, 0, width/2, height/2)
+    image(img, 0, 0, width / 2, height / 2)
 ]]></code>
 </example>
 

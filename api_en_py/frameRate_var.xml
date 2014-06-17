@@ -13,6 +13,7 @@
 <code><![CDATA[
 def setup(): 
     frameRate(30)
+
 def draw(): 
     line(0, 0, width, height)
     println(frameRate)

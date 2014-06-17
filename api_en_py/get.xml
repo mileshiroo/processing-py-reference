@@ -11,9 +11,9 @@
 <example>
 <image>get_0.png</image>
 <code><![CDATA[
-PImage myImage = loadImage("apples.jpg")
+myImage = loadImage("apples.jpg")
 image(myImage, 0, 0)
-PImage c = get()
+c = get()
 image(c, width/2, 0)
 ]]></code>
 </example>
@@ -21,9 +21,9 @@ image(c, width/2, 0)
 <example>
 <image>get_1.png</image>
 <code><![CDATA[
-PImage myImage = loadImage("apples.jpg")
+myImage = loadImage("apples.jpg")
 image(myImage, 0, 0)
-color c = get(25, 25)
+c = get(25, 25)
 fill(c)
 noStroke()
 rect(25, 25, 50, 50)
