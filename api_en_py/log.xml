@@ -15,6 +15,7 @@ def setup():
     i = 12
     println(log(i))
     println(log10(i))
+
 # Calculates the base-10 logarithm of a number
 def log10(x): 
     return (log(x) / log(10))

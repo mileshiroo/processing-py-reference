@@ -11,11 +11,13 @@
 <example>
 <image>PShape_enableStyle_.png</image>
 <code><![CDATA[
-PShape s
+s = None
+
 def setup(): 
     # The file "bot.svg" must be in the data folder
     # of the current sketch to load successfully
     s = loadShape("bot.svg")
+
 def draw(): 
     s.disableStyle()
     shape(s, -30, 10, 80, 80)

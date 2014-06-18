@@ -12,10 +12,12 @@
 <example>
 <image></image>
 <code><![CDATA[
-PVector v
+v = None
+
 def setup(): 
     noLoop()
     v = PVector(30, 60, 0)
+
 def draw(): 
     ellipse(v.x, v.y, 12, 12)
     v.div(6)
@@ -26,13 +28,15 @@ def draw():
 <example>
 <image></image>
 <code><![CDATA[
-PVector v1
+v1 = None
+
 def setup(): 
     noLoop()
     v1 = PVector(30, 60, 0)
+
 def draw(): 
     ellipse(v1.x, v1.y, 12, 12)
-    PVector v2 = PVector.div(v1, 6)
+    v2 = PVector.div(v1, 6)
     ellipse(v2.x, v2.y, 24, 24)
 ]]></code>
 </example>

@@ -11,10 +11,10 @@
 <example>
 <image>PImage_get_0.png</image>
 <code><![CDATA[
-PImage mountains = loadImage("rockies.jpg")
+mountains = loadImage("rockies.jpg")
 background(mountains)
 noStroke()
-color c = mountains.get(60, 90)
+c = mountains.get(60, 90)
 fill(c)
 rect(25, 25, 50, 50)
 ]]></code>
@@ -23,9 +23,9 @@ rect(25, 25, 50, 50)
 <example>
 <image>PImage_get_1.png</image>
 <code><![CDATA[
-PImage mountains = loadImage("rockies.jpg")
+mountains = loadImage("rockies.jpg")
 background(mountains)
-PImage newMountains = mountains.get(50, 0, 50, 100)
+newMountains = mountains.get(50, 0, 50, 100)
 image(newMountains, 0, 0)
 ]]></code>
 </example>
@@ -35,7 +35,7 @@ Reads the color of any pixel or grabs a section of an image. If no parameters ar
 <br />
 If the pixel requested is outside of the image window, black is returned. The numbers returned are scaled according to the current color ranges, but only RGB values are returned by this function. For example, even though you may have drawn a shape with <b>colorMode(HSB)</b>, the numbers returned will be in RGB format.<br />
 <br />
-Getting the color of a single pixel with <b>get(x, y)</b> is easy, but not as fast as grabbing the data directly from <b>pixels[]</b>. The equivalent statement to <b>get(x, y)</b> using <b>pixels[]</b> is <b>pixels[y*width+x]</b>. See the reference for <b>pixels[]</b> for more information.
+Getting the color of a single pixel with <b>get(x, y)</b> is easy, but not as fast as grabbing the data directly from <b>pixels</b>. The equivalent statement to <b>get(x, y)</b> using <b>pixels</b> is <b>pixels[y*width+x]</b>. See the reference for <b>pixels</b> for more information.
 ]]></description>
 
 </root>

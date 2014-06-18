@@ -12,10 +12,11 @@
 <example>
 <image></image>
 <code><![CDATA[
-PVector v
-def setup(): 
+v = None
+
+def setup():
     v = PVector.fromAngle(0.01)
-    println(v)# Prints "[ 0.99995, 0.009999833, 0.0 ]"
+    println(v)  # Prints "[ 0.99995, 0.009999833, 0.0 ]"
 ]]></code>
 </example>
 

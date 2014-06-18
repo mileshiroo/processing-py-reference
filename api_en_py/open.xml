@@ -16,8 +16,11 @@
 <code><![CDATA[
 def setup(): 
     size(200, 200)
+
+# draw() must be present for mousePressed() to work
 def draw(): 
-    # draw() must be present for mousePressed() to work
+    pass 
+
 def mousePressed(): 
     println("Opening Process_4")
     open("/Applications/Process_4.app")
@@ -30,10 +33,13 @@ def mousePressed():
 <code><![CDATA[
 def setup(): 
     size(200, 200)
+
+# draw() must be present for mousePressed() to work
 def draw(): 
-    # draw() must be present for mousePressed() to work
+    pass 
+
 def mousePressed(): 
-    String[] params = "/usr/bin/jikes", "-help" 
+    params = "/usr/bin/jikes", "-help" 
     open(params)
 ]]></code>
 </example>

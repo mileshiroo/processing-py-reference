@@ -13,7 +13,7 @@
 <code><![CDATA[
 size(100, 100, P3D)
 noStroke()
-PImage img = loadImage("laDefense.jpg")
+img = loadImage("laDefense.jpg")
 textureMode(IMAGE)
 beginShape()
 texture(img)
@@ -30,7 +30,7 @@ endShape()
 <code><![CDATA[
 size(100, 100, P3D)
 noStroke()
-PImage img = loadImage("laDefense.jpg")
+img = loadImage("laDefense.jpg")
 textureMode(NORMAL)
 beginShape()
 texture(img)

@@ -21,10 +21,9 @@
 #     &ltanimal id=&quot1&quotspecies=&quotPanthera pardus&quot&gtLeopard&lt/animal&gt
 #     &ltanimal id=&quot2&quotspecies=&quotEquus zebra&quot&gtZebra&lt/animal&gt
 # &lt/mammals&gt
-XML xml
 def setup(): 
     xml = loadXML("mammals.xml")
-    XML firstChild = xml.getChild("animal")
+    firstChild = xml.getChild("animal")
     println(firstChild.getString("species"))
     firstChild.setString("species", "Jamides zebra")
     println(firstChild.getString("species"))

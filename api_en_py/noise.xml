@@ -12,6 +12,7 @@
 <image></image>
 <code><![CDATA[
 xoff = 0.0
+
 def draw(): 
     background(204)
     xoff = xoff + .01
@@ -23,15 +24,13 @@ def draw():
 <example>
 <image></image>
 <code><![CDATA[
-noiseScale =0.02
-def draw(): 
+noiseScale = 0.02
+def draw():
     background(0)
-    for x in range(width): 
-        noiseVal = noise((mouseX+x)*noiseScale, 
-                                                        mouseY*noiseScale)
-        stroke(noiseVal*255)
-        line(x, mouseY+noiseVal*80, x, height)
-    
+    for x in range(width):
+        noiseVal = noise((mouseX + x) * noiseScale, mouseY * noiseScale)
+        stroke(noiseVal * 255)
+        line(x, mouseY + noiseVal * 80, x, height)
 ]]></code>
 </example>
 

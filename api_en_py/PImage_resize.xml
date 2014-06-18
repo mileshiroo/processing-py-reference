@@ -11,7 +11,7 @@
 <example>
 <image>PImage_resize_0.png</image>
 <code><![CDATA[
-PImage jelly = loadImage("jelly.jpg")
+jelly = loadImage("jelly.jpg")
 image(jelly, 0, 0)
 jelly.resize(100, 50)
 image(jelly, 0, 0)
@@ -21,7 +21,7 @@ image(jelly, 0, 0)
 <example>
 <image>PImage_resize_1.png</image>
 <code><![CDATA[
-PImage jelly = loadImage("jelly.jpg")
+jelly = loadImage("jelly.jpg")
 image(jelly, 0, 0)
 jelly.resize(0, 50)
 image(jelly, 0, 0)

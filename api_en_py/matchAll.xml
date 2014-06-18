@@ -13,7 +13,7 @@
 <code><![CDATA[
 s = "Inside tags, you will find &lttag&gtmultiple&lt/tag&gt"
              s += "&lttag&gtpieces&lt/tag&gtof &lttag&gtcontent&lt/tag&gt."
-String[][] m = matchAll(s, "&lttag&gt(.*?)&lt/tag&gt")
+m = matchAll(s, "&lttag&gt(.*?)&lt/tag&gt")
 for i in range(len(m)): 
     println("Found '" + m[i][1] + "' inside a tag.")
 # Prints to the console:

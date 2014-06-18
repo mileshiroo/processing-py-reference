@@ -12,9 +12,11 @@
 <image></image>
 <code><![CDATA[
 xoff = 0.0
+
 def setup(): 
     noiseSeed(0)
     stroke(0, 10)
+
 def draw(): 
     xoff = xoff + .01
     n = noise(xoff) * width

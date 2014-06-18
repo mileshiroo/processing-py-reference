@@ -13,8 +13,9 @@
 <image></image>
 <code><![CDATA[
 # Non-static (lerp on a specific vector)
-PVector current
-PVector target
+current = None
+target = None
+
 def setup(): 
     current = PVector(0.0, 0.0)
     target = PVector(100.0, 100.0)
@@ -27,14 +28,15 @@ def setup():
 <image></image>
 <code><![CDATA[
 # Static (return a vector)
-PVector start
-PVector end
-PVector middle
-def setup(): 
+start = None
+end = None
+middle = None
+
+def setup():
     start = PVector(0.0, 0.0)
     end = PVector(100.0, 100.0)
     middle = PVector.lerp(start, end, 0.5)
-    println(middle)# Prints "[ 50.0, 50.0, 0.0 ]"
+    println(middle)  # Prints "[ 50.0, 50.0, 0.0 ]"
 ]]></code>
 </example>
 

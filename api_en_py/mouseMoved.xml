@@ -13,15 +13,17 @@
 <code><![CDATA[
 # Move the mouse across the image
 # to change its value
+
 value = 0
-def draw(): 
+
+def draw():
     fill(value)
     rect(25, 25, 50, 50)
-def mouseMoved(): 
+
+def mouseMoved():
     value = value + 5
     if value > 255:
         value = 0
-    
 ]]></code>
 </example>
 

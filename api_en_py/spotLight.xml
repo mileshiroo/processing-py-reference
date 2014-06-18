@@ -24,11 +24,11 @@ sphere(30)
 <image>spotLight_1.png</image>
 <code><![CDATA[
 size(100, 100, P3D)
-concentration = 600# Try 1 -> 10000
+concentration = 600  # Try 1 -> 10000
 background(0)
 noStroke()
-spotLight(51, 102, 126, 50, 50, 400, 
-                    0, 0, -1, PI/16, concentration)
+spotLight(51, 102, 126, 50, 50, 400,
+          0, 0, -1, PI / 16, concentration)
 translate(80, 50, 0)
 sphere(30)
 ]]></code>

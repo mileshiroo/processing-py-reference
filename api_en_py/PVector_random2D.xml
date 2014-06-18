@@ -12,7 +12,8 @@
 <example>
 <image></image>
 <code><![CDATA[
-PVector v
+v = None
+
 def setup(): 
     v = PVector.random2D()
     println(v)

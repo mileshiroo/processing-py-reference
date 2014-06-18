@@ -11,7 +11,7 @@
 <example>
 <image>PImage_height.png</image>
 <code><![CDATA[
-PImage tiles = loadImage("tiles.jpg")
+tiles = loadImage("tiles.jpg")
 image(tiles, 20, 10)
 rect(55, 10, tiles.width, tiles.height)
 ]]></code>

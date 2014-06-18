@@ -21,13 +21,12 @@
 #     &ltposition id="1"&gt256.222&lt/position&gt
 #     &ltposition id="2"&gt512.333&lt/position&gt
 # &lt/positions&gt
-XML xml
-def setup(): 
+def setup():
     xml = loadXML("positions.xml")
-    XML firstChild = xml.getChild("position")
+    firstChild = xml.getChild("position")
     println(firstChild.getFloatContent())
 # Sketch prints:
-# 128.111
+# 128.11099243164062
 ]]></code>
 </example>
 

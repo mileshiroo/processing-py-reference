@@ -31,9 +31,9 @@ for i in range(100):
 <image></image>
 <code><![CDATA[
 # Get a random element from an array
-String[] words = "apple", "bear", "cat", "dog" 
-index = int(random(len(words)))# Same as int(random(4))
-println(words[index])# Prints one of the four words
+words = "apple", "bear", "cat", "dog"
+index = int(random(len(words)))  # Same as int(random(4))
+println(words[index])  # Prints one of the four words
 ]]></code>
 </example>
 

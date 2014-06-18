@@ -11,20 +11,20 @@
 <example>
 <image></image>
 <code><![CDATA[
-def setup(): 
-    PFont metaBold
+def setup():
     metaBold = loadFont("fonts/Meta-Bold.vlw.gz")
-    setFont(metaBold, 44)
+    textFont(metaBold, 44)
     noLoop()
-def draw(): 
-    d = day()# Values from 1 - 31
-    m = month()# Values from 1 - 12
-    y = year()# 2003, 2004, 2005, etc.
-    s = String.valueOf(d)
+
+def draw():
+    d = day()  # Values from 1 - 31
+    m = month()  # Values from 1 - 12
+    y = year()  # 2003, 2004, 2005, etc.
+    s = str(d)
     text(s, 10, 28)
-    s = String.valueOf(m)
+    s = str(m)
     text(s, 10, 56)
-    s = String.valueOf(y)
+    s = str(y)
     text(s, 10, 84)
 ]]></code>
 </example>

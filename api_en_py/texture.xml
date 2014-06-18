@@ -13,7 +13,7 @@
 <code><![CDATA[
 size(100, 100, P3D)
 noStroke()
-PImage img = loadImage("laDefense.jpg")
+img = loadImage("laDefense.jpg")
 beginShape()
 texture(img)
 vertex(10, 20, 0, 0)

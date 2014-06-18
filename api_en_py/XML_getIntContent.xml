@@ -21,10 +21,9 @@
 #     &ltposition id="1"&gt256&lt/position&gt
 #     &ltposition id="2"&gt512&lt/position&gt
 # &lt/positions&gt
-XML xml
 def setup(): 
     xml = loadXML("positions.xml")
-    XML firstChild = xml.getChild("position")
+    firstChild = xml.getChild("position")
     println(firstChild.getIntContent())
 # Sketch prints:
 # 128

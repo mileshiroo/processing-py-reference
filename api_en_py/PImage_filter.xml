@@ -12,13 +12,16 @@
 <example>
 <image>PImage_filter_0_threshold.png</image>
 <code><![CDATA[
-PImage img1, img2
+img1 = None
+img2 = None
+
 def setup(): 
     size(100, 100)
     img1 = loadImage("apples.jpg")
     img2 = loadImage("apples.jpg")
     img1.filter(THRESHOLD, 0.3)
     img2.filter(THRESHOLD, 0.7)
+
 def draw(): 
     image(img1, 0, 0)
     image(img2, width/2, 0)
@@ -28,11 +31,14 @@ def draw():
 <example>
 <image>PImage_filter_1_gray.png</image>
 <code><![CDATA[
-PImage img1, img2
+img1 = None
+img2 = None
+
 def setup(): 
     img1 = loadImage("apples.jpg")
     img2 = loadImage("apples.jpg")
     img2.filter(GRAY)
+
 def draw(): 
     image(img1, 0, 0)
     image(img2, width/2, 0)
@@ -42,11 +48,14 @@ def draw():
 <example>
 <image>PImage_filter_2_invert.png</image>
 <code><![CDATA[
-PImage img1, img2
+img1 = None
+img2 = None
+
 def setup(): 
     img1 = loadImage("apples.jpg")
     img2 = loadImage("apples.jpg")
     img2.filter(INVERT)
+
 def draw(): 
     image(img1, 0, 0)
     image(img2, width/2, 0)
@@ -56,11 +65,14 @@ def draw():
 <example>
 <image>PImage_filter_3_posterize.png</image>
 <code><![CDATA[
-PImage img1, img2
+img1 = None
+img2 = None
+
 def setup(): 
     img1 = loadImage("apples.jpg")
     img2 = loadImage("apples.jpg")
     img2.filter(POSTERIZE, 4)
+
 def draw(): 
     image(img1, 0, 0)
     image(img2, width/2, 0)
@@ -70,11 +82,14 @@ def draw():
 <example>
 <image>PImage_filter_4_blur.png</image>
 <code><![CDATA[
-PImage img1, img2
+img1 = None
+img2 = None
+
 def setup(): 
     img1 = loadImage("apples.jpg")
     img2 = loadImage("apples.jpg")
     img2.filter(BLUR, 6)
+
 def draw(): 
     image(img1, 0, 0)
     image(img2, width/2, 0)
@@ -84,11 +99,14 @@ def draw():
 <example>
 <image>PImage_filter_5_erode.png</image>
 <code><![CDATA[
-PImage img1, img2
+img1 = None
+img2 = None
+
 def setup(): 
     img1 = loadImage("apples.jpg")
     img2 = loadImage("apples.jpg")
     img2.filter(ERODE)
+
 def draw(): 
     image(img1, 0, 0)
     image(img2, width/2, 0)
@@ -98,11 +116,14 @@ def draw():
 <example>
 <image>PImage_filter_6_dilate.png</image>
 <code><![CDATA[
-PImage img1, img2
+img1 = None
+img2 = None
+
 def setup(): 
     img1 = loadImage("apples.jpg")
     img2 = loadImage("apples.jpg")
     img2.filter(DILATE)
+
 def draw(): 
     image(img1, 0, 0)
     image(img2, width/2, 0)

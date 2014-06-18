@@ -12,7 +12,7 @@
 <image>textWidth_.png</image>
 <code><![CDATA[
 textSize(28)
-char c = 'T'
+c = 'T'
 cw = textWidth(c)
 text(c, 0, 40)
 line(cw, 0, cw, 50)

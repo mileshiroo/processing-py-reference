@@ -35,6 +35,7 @@ println(m)# Prints "-9.0"
 def setup(): 
     size(200, 200)
     noStroke()
+
 def draw(): 
     background(204)
     x1 = map(mouseX, 0, width, 50, 150)

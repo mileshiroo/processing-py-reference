@@ -11,9 +11,11 @@
 <example>
 <image>shape_1.png</image>
 <code><![CDATA[
-PShape s
+s = None
+
 def setup(): 
     s = loadShape("bot.svg")
+
 def draw(): 
     shape(s, 10, 10, 80, 80)
 ]]></code>

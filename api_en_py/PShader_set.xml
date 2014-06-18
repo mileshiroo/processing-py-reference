@@ -12,13 +12,15 @@
 <example>
 <image></image>
 <code><![CDATA[
-PImage tex
-PShader deform
+deform = None
+tex = None
+
 def setup(): 
     size(640, 360, P2D)
     tex = loadImage("tex1.jpg")
     deform = loadShader("deform.glsl")
     deform.set("resolution", float(width), float(height))
+
 def draw(): 
     deform.set("time", millis() / 1000.0)
     deform.set("mouse", float(mouseX), float(mouseY))

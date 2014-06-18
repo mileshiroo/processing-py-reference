@@ -12,9 +12,9 @@
 <image>tan_.png</image>
 <code><![CDATA[
 a = 0.0
-inc = TWO_PI/50.0
-for (i = 0i < 100i = i+2) 
-    line(i, 50, i, 50+tan(a)*2.0)
+inc = TWO_PI / 50.0
+for i in range(0, 100, 2):
+    line(i, 50, i, 50 + tan(a) * 2.0)
     a = a + inc
 ]]></code>
 </example>

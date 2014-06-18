@@ -11,10 +11,12 @@
 <example>
 <image>shapeMode_.png</image>
 <code><![CDATA[
-PShape bot 
+bot = None
+
 def setup(): 
     size(100, 100)
     bot = loadShape("bot.svg")
+
 def draw(): 
     shapeMode(CENTER)
     shape(bot, 35, 35, 50, 50)

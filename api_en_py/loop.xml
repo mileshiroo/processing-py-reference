@@ -11,21 +11,25 @@
 <example>
 <image></image>
 <code><![CDATA[
-def setup(): 
-    size(200, 200)
-    noLoop()# draw() will not loop
 x = 0
-def draw(): 
+
+def setup():
+    size(200, 200)
+    noLoop()  # draw() will not loop
+
+def draw():
     background(204)
     x = x + .1
     if x > width:
         x = 0
-    
+
     line(x, 0, x, height)
-def mousePressed(): 
-    loop()# Holding down the mouse activates looping
-def mouseReleased(): 
-    noLoop()# Releasing the mouse stops looping draw()
+
+def mousePressed():
+    loop()  # Holding down the mouse activates looping
+
+def mouseReleased():
+    noLoop()  # Releasing the mouse stops looping draw()
 ]]></code>
 </example>
 

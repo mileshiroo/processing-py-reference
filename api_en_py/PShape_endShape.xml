@@ -14,7 +14,8 @@
 <example>
 <image></image>
 <code><![CDATA[
-PShape s# The PShape object
+s = None  # The PShape object
+
 def setup(): 
     size(100, 100, P2D)
     s = createShape()
@@ -25,6 +26,7 @@ def setup():
     s.vertex(0, 50)
     s.vertex(50, 0)
     s.endShape()
+
 def draw(): 
     shape(s, 25, 25)
 ]]></code>
