@@ -11,12 +11,15 @@
 <example>
 <image></image>
 <code><![CDATA[
-PShape s
+s = None
+
 def setup(): 
     s = loadShape("bot.svg")
+
 def draw(): 
     background(204)
     shape(s)
+
 def mousePressed(): 
     # Move the shape 10 pixels right each time the mouse is pressed
     s.translate(10, 0)

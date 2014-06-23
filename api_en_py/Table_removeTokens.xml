@@ -12,12 +12,11 @@
 <example>
 <image></image>
 <code><![CDATA[
-Table table
-def setup(): 
+def setup():
     table = Table()
     table.addColumn("name")
     table.addColumn("type")
-    TableRow newRow = table.addRow()
+    newRow = table.addRow()
     newRow.setString("name", "     $Lion    ,")
     newRow.setString("type", ",,,Mammal")
     newRow = table.addRow()
@@ -26,12 +25,9 @@ def setup():
     newRow = table.addRow()
     newRow.setString("name", "    $Mosquito , ")
     newRow.setString("type", ",,,Insect")
-    
-    println(table.getStringColumn("name"))
-    
+    println('\n'.join(table.getStringColumn("name")))
     table.removeTokens(",$ ")
-    
-    println(table.getStringColumn("name"))
+    println('\n'.join(table.getStringColumn("name")))
 # Sketch prints:
 # [0] "     $Lion    ,"
 # [1] "$Snake    "

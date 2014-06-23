@@ -23,19 +23,22 @@ def draw():
 <example>
 <image></image>
 <code><![CDATA[
-def setup(): 
-    size(200, 200)
 x = 0.0
-def draw(): 
+
+def setup():
+    size(200, 200)
+
+def draw():
     background(204)
     x = x + 0.1
     if x > width:
         x = 0
-    
     line(x, 0, x, height)
-def mousePressed(): 
+
+def mousePressed():
     noLoop()
-def mouseReleased(): 
+
+def mouseReleased():
     loop()
 ]]></code>
 </example>
@@ -43,16 +46,18 @@ def mouseReleased():
 <example>
 <image></image>
 <code><![CDATA[
-boolean someMode = False
-def setup(): 
+someMode = False
+
+def setup():
     noLoop()
-def draw(): 
+
+def draw():
     if someMode:
-        # do something
-    
-def mousePressed(): 
+        pass
+
+def mousePressed():
     someMode = True
-    redraw()# or loop()
+    redraw()  # or loop()
 ]]></code>
 </example>
 

@@ -12,12 +12,11 @@
 <example>
 <image></image>
 <code><![CDATA[
-Table table
-def setup(): 
+def setup():
     table = Table()
     table.addColumn("name")
     table.addColumn("type")
-    TableRow newRow = table.addRow()
+    newRow = table.addRow()
     newRow.setString("name", "Lion")
     newRow.setString("type", "Mammal")
     newRow = table.addRow()
@@ -29,13 +28,8 @@ def setup():
     newRow = table.addRow()
     newRow.setString("name", "Lizard")
     newRow.setString("type", "Reptile")
-    
-    for (TableRow row : table.matchRows("R.*", "type")) 
+    for row in table.matchRows("R.*", "type"):
         println(row.getString("name") + ": " + row.getString("type"))
-    
-# Sketch prints:
-# Snake: Reptile
-# Lizard: Reptile
 ]]></code>
 </example>
 

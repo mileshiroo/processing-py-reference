@@ -12,34 +12,28 @@
 <example>
 <image></image>
 <code><![CDATA[
-Table table
-def setup(): 
+def setup():
     table = Table()
-    
     table.addColumn("id")
     table.addColumn("species")
     table.addColumn("name")
-    println(table.getColumnCount())#Prints 3
-    
-    table.removeColumn("id")#Reference by title
-    println(table.getColumnCount())#Prints 2
+    println(table.getColumnCount())  # Prints 3
+    table.removeColumn("id")         # Reference by title
+    println(table.getColumnCount())  # Prints 2
 ]]></code>
 </example>
 
 <example>
 <image></image>
 <code><![CDATA[
-Table table
-def setup(): 
+def setup():
     table = Table()
-    
     table.addColumn("id")
     table.addColumn("species")
     table.addColumn("name")
-    println(table.getColumnCount())#Prints 3
-    
-    table.removeColumn(0)#Reference by ID
-    println(table.getColumnCount())#Prints 2
+    println(table.getColumnCount())  # Prints 3
+    table.removeColumn(0)            # Reference by ID
+    println(table.getColumnCount())  # Prints 2
 ]]></code>
 </example>
 

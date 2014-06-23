@@ -11,7 +11,6 @@
 <example>
 <image>loadImage_0.png</image>
 <code><![CDATA[
-PImage img
 img = loadImage("laDefense.jpg")
 image(img, 0, 0)
 ]]></code>
@@ -20,10 +19,12 @@ image(img, 0, 0)
 <example>
 <image>loadImage_1.png</image>
 <code><![CDATA[
-PImage img
-def setup(): 
+img = None
+
+def setup():
     img = loadImage("laDefense.jpg")
-def draw(): 
+
+def draw():
     image(img, 0, 0)
 ]]></code>
 </example>
@@ -32,12 +33,14 @@ def draw():
 <example>
 <image>loadImage_2.png</image>
 <code><![CDATA[
-PImage webImg
-def setup(): 
-    url = "http://processing.org/img/processing_cover"
+webImg = None
+
+def setup():
+    url = "http://processing.org/img/processing-web"
     # Load image from a web server
-    webImg = loadImage(url, "gif")
-def draw(): 
+    webImg = loadImage(url, "png")
+
+def draw():
     background(0)
     image(webImg, 0, 0)
 ]]></code>

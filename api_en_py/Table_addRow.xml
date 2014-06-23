@@ -12,23 +12,18 @@
 <example>
 <image></image>
 <code><![CDATA[
-Table table
-def setup(): 
+def setup():
     table = Table()
-    
     table.addColumn("name")
     table.addColumn("type")
-    
-    TableRow newRow = table.addRow()
+    newRow = table.addRow()
     newRow.setString("name", "Lion")
     newRow.setString("type", "Mammal")
-    println(table.getRowCount())# Prints 1
-    
-    table.addRow()# Creates a blank row
-    println(table.getRowCount())# Prints 2
-    
-    table.addRow(newRow)# Duplicates newRow
-    println(table.getRowCount())# Prints 3
+    println(table.getRowCount())  # Prints 1
+    table.addRow()                # Creates a blank row
+    println(table.getRowCount())  # Prints 2
+    table.addRow(newRow)          # Duplicates newRow
+    println(table.getRowCount())  # Prints 3
 ]]></code>
 </example>
 

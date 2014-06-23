@@ -11,12 +11,15 @@
 <example>
 <image></image>
 <code><![CDATA[
-PShape s
+s = None
+
 def setup(): 
     s = loadShape("bot.svg")
+
 def draw(): 
     background(204)
     shape(s)
+
 def mousePressed(): 
     # Shrink the shape 90% each time the mouse is pressed
     s.scale(0.9)

@@ -3,9 +3,6 @@
 
 <name>Table</name>
 
-<!-- unsupported_modes>js</unsupported_modes -->
-<!-- js_mode><description>This part of the Processing API is not supported in JavaScript mode</description></js_mode -->
-
 <category>Data</category>
 
 <subcategory>Composite</subcategory>
@@ -15,19 +12,18 @@
 <example>
 <image></image>
 <code><![CDATA[
-Table table
-def setup(): 
+def setup():
     table = Table()
-    
+
     table.addColumn("id")
     table.addColumn("species")
     table.addColumn("name")
-    
-    TableRow newRow = table.addRow()
+
+    newRow = table.addRow()
     newRow.setInt("id", table.lastRowIndex())
     newRow.setString("species", "Panthera leo")
     newRow.setString("name", "Lion")
-    
+
     saveTable(table, "data/new.csv")
 # Sketch saves the following to a file called "new.csv":
 # id,species,name

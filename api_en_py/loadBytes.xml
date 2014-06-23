@@ -11,20 +11,20 @@
 <example>
 <image></image>
 <code><![CDATA[
-# Open a file and read its binary data 
-byte b[] = loadBytes("something.dat")
- 
-# Print each value, from 0 to 255 
-for i in range(len(b)): 
-    # Every tenth number, start a line 
+# Open a file and read its binary data
+b = loadBytes("something.dat")
+
+# Print each value, from 0 to 255
+for i in range(len(b)):
+    # Every tenth number, start a line
     if (i % 10) == 0:
-        println()
-    
-    # bytes are from -128 to 127, this converts to 0 to 255 
+        println("")
+
+    # bytes are from -128 to 127, this converts to 0 to 255
     a = b[i] & 0xff
-    print(a + " ")
-# Print a blank line at the end 
-println()
+    print("%i " % (a))
+# Print a blank line at the end
+println("")
 ]]></code>
 </example>
 

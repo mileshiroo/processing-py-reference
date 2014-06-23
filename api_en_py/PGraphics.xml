@@ -11,10 +11,12 @@
 <example>
 <image></image>
 <code><![CDATA[
-PGraphics pg
+pg = None
+
 def setup(): 
     size(100, 100)
     pg = createGraphics(40, 40)
+
 def draw(): 
     pg.beginDraw()
     pg.background(100)

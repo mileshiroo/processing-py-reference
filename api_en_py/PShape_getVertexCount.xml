@@ -14,7 +14,8 @@
 <example>
 <image></image>
 <code><![CDATA[
-PShape s
+s = None
+
 def setup(): 
     size(100, 100, P2D)
     s = createShape()
@@ -24,14 +25,14 @@ def setup():
     s.vertex(60, 60)
     s.vertex(0, 60)
     s.endShape(CLOSE)
+
 def draw(): 
     translate(20, 20)
     for i in range(s.getVertexCount()): 
-        PVector v = s.getVertex(i)
+        v = s.getVertex(i)
         v.x += random(-1, 1)
         v.y += random(-1, 1)
         s.setVertex(i, v)
-    
     shape(s)
 ]]></code>
 </example>

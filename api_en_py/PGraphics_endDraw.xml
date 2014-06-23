@@ -12,9 +12,10 @@
 <example>
 <image></image>
 <code><![CDATA[
-PGraphics pg
+pg = None
+
 def setup(): 
-    size(100, 100)
+    size(100, 100, P2D)
     pg = createGraphics(80, 80, P2D)
     pg.beginDraw()
     pg.background(102)
@@ -22,6 +23,7 @@ def setup():
     pg.line(20, 20, 80, 80)
     pg.endDraw()
     noLoop()
+
 def draw(): 
     image(pg, 10, 10)
 ]]></code>

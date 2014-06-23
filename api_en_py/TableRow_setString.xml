@@ -12,27 +12,26 @@
 <example>
 <image></image>
 <code><![CDATA[
-Table table
-def setup(): 
+def setup():
     table = Table()
-    
+
     table.addColumn("number", Table.INT)
     table.addColumn("mass", Table.FLOAT)
     table.addColumn("name", Table.STRING)
-    
-    TableRow row = table.addRow()
+
+    row = table.addRow()
     row.setInt("number", 8)
     row.setFloat("mass", 15.9994)
     row.setString("name", "Oxygen")
-    
-    println(row.getInt("number"))# Prints 8
-    println(row.getFloat("mass"))# Prints 15.9994
-    println(row.getString("name"))# Prints "Oxygen
+
+    println(row.getInt("number"))  # Prints 8
+    println(nf(row.getFloat("mass"), 2, 4))  # Prints 15.9994
+    println(row.getString("name"))  # Prints "Oxygen
 ]]></code>
 </example>
 
 <description><![CDATA[
-Stores a String value in the <b>TableRow</b>'s specified column. The column may be specified by either its ID or title.
+Stores a string value in the <b>TableRow</b>'s specified column. The column may be specified by either its ID or title.
 ]]></description>
 
 </root>

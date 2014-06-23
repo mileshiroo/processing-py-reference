@@ -11,13 +11,15 @@
 <example>
 <image>PShape_getChild_.png</image>
 <code><![CDATA[
-PShape states
-PShape ohio
+states = None 
+ohio = None
+
 def setup(): 
     size(100, 100)
     states = loadShape("tristate.svg")
     ohio = states.getChild("OH")
     ohio.disableStyle()
+
 def draw(): 
     background(0)
     shape(states, -48, 5)

@@ -30,7 +30,7 @@ def draw():
 </example>
 
 <description><![CDATA[
-The boolean system variable <b>keyPressed</b> is <b>true</b> if any key is pressed and <b>false</b> if no keys are pressed.
+The Boolean system variable <b>keyPressed</b> is <b>True</b> if any key is pressed and <b>False</b> if no keys are pressed.
 ]]></description>
 
 </root>

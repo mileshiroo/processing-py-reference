@@ -12,12 +12,11 @@
 <example>
 <image></image>
 <code><![CDATA[
-Table table
-def setup(): 
+def setup():
     table = Table()
     table.addColumn("name")
     table.addColumn("type")
-    TableRow newRow = table.addRow()
+    newRow = table.addRow()
     newRow.setString("name", "Lion")
     newRow.setString("type", "Mammal")
     newRow = table.addRow()
@@ -26,8 +25,8 @@ def setup():
     newRow = table.addRow()
     newRow.setString("name", "Mosquito")
     newRow.setString("type", "Insect")
-    TableRow result = table.findRow("Reptile", "type")
-    println(result.getString("name"))# Prints "Snake"
+    result = table.findRow("Reptile", "type")
+    println(result.getString("name"))  # Prints "Snake"
 ]]></code>
 </example>
 

@@ -23,8 +23,8 @@
 # &lt/mammals&gt
 def setup(): 
     xml = loadXML("mammals.xml")
-    XML firstChild = xml.getChild("animal")
-    println(firstChild.listAttributes())
+    firstChild = xml.getChild("animal")
+    println('\n'.join(firstChild.listAttributes())) # Print line-separated list items  
 # Sketch prints:
 # [0] "id"
 # [1] "species"
@@ -32,7 +32,7 @@ def setup():
 </example>
 
 <description><![CDATA[
-Gets all of the specified element's attributes, and returns them as an array of Strings.
+Gets all of the specified element's attributes, and returns them as a list of Strings.
 ]]></description>
 
 </root>

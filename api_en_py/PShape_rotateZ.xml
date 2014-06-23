@@ -11,13 +11,16 @@
 <example>
 <image></image>
 <code><![CDATA[
-PShape s
+s = None
+
 def setup(): 
     size(100, 100, P3D)
     s = loadShape("ohio.svg")
+
 def draw(): 
     background(204)
     shape(s)
+
 def mousePressed(): 
     # Rotate the shape around the z-axis each time the mouse is pressed
     s.rotateZ(0.1)

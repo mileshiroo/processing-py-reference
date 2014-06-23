@@ -13,23 +13,13 @@
 <image></image>
 <code><![CDATA[
 size(200, 200)
-String[] fontList = PFont.list()
-println(fontList)
+fontList = PFont.list()
+println('\n'.join(fontList)) # Print a line-separated list of fonts installed on the System
 ]]></code>
 </example>
 
-<!-- js_mode>
-	<description><![CDATA[
-Use a "@pjs font" directive to preload font files before your sketch starts:
-/* @pjs font="Arial.ttf"; */
-
-Please see this page for details on font handling in JavaScript mode:
-http://wiki.processing.org/w/Font_handling_in_JavaScript_mode
-]]></description>
-</js_mode -->
-
 <description><![CDATA[
-Gets a list of the fonts installed on the system. The data is returned as a String array. This list provides the names of each font for input into <b>createFont()</b>, which allows Processing to dynamically format fonts.
+Gets a list of the fonts installed on the system. The data is returned as a String list. This list provides the names of each font for input into <b>createFont()</b>, which allows Processing to dynamically format fonts.
 ]]></description>
 
 </root>
