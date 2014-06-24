@@ -12,13 +12,16 @@
 <image></image>
 <code><![CDATA[
 x = 0
-def setup(): 
+
+def setup():
     size(200, 200)
     noLoop()
-def draw(): 
+
+def draw():
     background(204)
     line(x, 0, x, height)
-def mousePressed(): 
+
+def mousePressed():
     x += 1
     redraw()
 ]]></code>

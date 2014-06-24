@@ -14,15 +14,17 @@
 <example>
 <image></image>
 <code><![CDATA[
-PShape square# The PShape object
-def setup(): 
+square = None  # The PShape object
+
+def setup():
     size(100, 100, P2D)
     # Creating the PShape as a square. The
     # numeric arguments are similar to rect().
     square = createShape(RECT, 0, 0, 50, 50)
     square.setFill(color(0, 0, 255))
     square.setStroke(False)
-def draw(): 
+
+def draw():
     shape(square, 25, 25)
 ]]></code>
 </example>
@@ -30,8 +32,9 @@ def draw():
 <example>
 <image></image>
 <code><![CDATA[
-PShape s# The PShape object
-def setup(): 
+s = None  # The PShape object
+
+def setup():
     size(100, 100, P2D)
     # Creating a custom PShape as a square, by
     # specifying a series of vertices.
@@ -44,7 +47,8 @@ def setup():
     s.vertex(50, 50)
     s.vertex(50, 0)
     s.endShape(CLOSE)
-def draw(): 
+
+def draw():
     shape(s, 25, 25)
 ]]></code>
 </example>
@@ -52,8 +56,9 @@ def draw():
 <example>
 <image></image>
 <code><![CDATA[
-PShape s
-def setup(): 
+s = None
+
+def setup():
     size(100, 100, P2D)
     s = createShape()
     s.beginShape(TRIANGLE_STRIP)
@@ -65,7 +70,8 @@ def setup():
     s.vertex(80, 20)
     s.vertex(90, 75)
     s.endShape()
-def draw(): 
+    
+def draw():
     shape(s, 0, 0)
 ]]></code>
 </example>
@@ -73,8 +79,9 @@ def draw():
 <example>
 <image></image>
 <code><![CDATA[
-PShape alien, head, body
-def setup(): 
+alien = None
+
+def setup():
     size(100, 100, P2D)
     # Create the shape group
     alien = createShape(GROUP)
@@ -86,10 +93,11 @@ def setup():
     # Add the two "child" shapes to the parent group
     alien.addChild(body)
     alien.addChild(head)
-def draw(): 
+
+def draw():
     background(204)
     translate(50, 15)
-    shape(alien)# Draw the group
+    shape(alien)  # Draw the group
 ]]></code>
 </example>
 

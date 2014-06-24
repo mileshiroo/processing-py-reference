@@ -15,17 +15,17 @@
 <example>
 <image></image>
 <code><![CDATA[
-def setup(): 
+def setup():
     size(200, 200)
     noFill()
     imageMode(CENTER)
-def draw(): 
+
+def draw():
     background(204)
     if mousePressed:
         clip(mouseX, mouseY, 50, 50)
     else:
         noClip()
-    
     line(0, 0, width, height)
     line(0, height, width, 0)
 ]]></code>

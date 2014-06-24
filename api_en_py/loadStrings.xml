@@ -11,9 +11,9 @@
 <example>
 <image></image>
 <code><![CDATA[
-lines[] = loadStrings("list.txt")
-println("there are " + len(lines) + " lines")
-for i in range(len(lines)): 
+lines = loadStrings("list.txt")
+println("there are %i lines" % len(lines))
+for i in range(len(lines)):
     println(lines[i])
 ]]></code>
 </example>
@@ -21,15 +21,15 @@ for i in range(len(lines)):
 <example>
 <image></image>
 <code><![CDATA[
-lines[] = loadStrings("http://processing.org/about/index.html")
-println("there are " + len(lines) + " lines")
-for i in range(len(lines)): 
+lines = loadStrings("http://processing.org/about/index.html")
+println("there are %i lines" % len(lines))
+for i in range(len(lines)):
     println(lines[i])
 ]]></code>
 </example>
 
 <description><![CDATA[
-Reads the contents of a file and creates a String array of its individual lines. If the name of the file is used as the parameter, as in the above example, the file must be loaded in the sketch's "data" directory/folder. <br />
+Reads the contents of a file and creates a string list of its individual lines. If the name of the file is used as the parameter, as in the above example, the file must be loaded in the sketch's "data" directory/folder. <br />
 <br />
 Alternatively, the file maybe be loaded from anywhere on the local computer using an absolute path (something that starts with / on Unix and Linux, or a drive letter on Windows), or the filename parameter can be a URL for a file found on a network.<br />
 <br />

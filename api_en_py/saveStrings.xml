@@ -12,14 +12,14 @@
 <image></image>
 <code><![CDATA[
 words = "apple bear cat dog"
-String[] list = split(words, ' ')
+list = split(words, ' ')
 # Writes the strings to a file, each on a separate line
 saveStrings("nouns.txt", list)
 ]]></code>
 </example>
 
 <description><![CDATA[
-Writes an array of Strings to a file, one line per String. By default, this file is saved to the sketch's folder. This folder is opened by selecting "Show Sketch Folder" from the "Sketch" menu.<br />
+Writes a list of strings to a file, one line per string. By default, this file is saved to the sketch's folder. This folder is opened by selecting "Show Sketch Folder" from the "Sketch" menu.<br />
 <br />
 Alternatively, the file can be saved to any location on the computer by using an absolute path (something that starts with / on Unix and Linux, or a drive letter on Windows).<br/>
 <br />
