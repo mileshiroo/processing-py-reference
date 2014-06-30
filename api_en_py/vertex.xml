@@ -39,7 +39,7 @@ endShape()
 <image>vertex_2.png</image>
 <code><![CDATA[
 size(100, 100, P3D)
-PImage img = loadImage("laDefense.jpg")
+img = loadImage("laDefense.jpg")
 noStroke()
 beginShape()
 texture(img)
