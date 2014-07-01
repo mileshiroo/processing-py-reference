@@ -33,7 +33,13 @@ It is possible to let range start at another number, or to specify another incre
 
 <syntax>
 range(<c>end</c>)
+</syntax>
+
+<syntax>
 range(<c>start</c>, <c>end</c>)
+</syntax>
+
+<syntax>
 range(<c>start</c>, <c>end</c>, <c>increment</c>)
 </syntax>
 

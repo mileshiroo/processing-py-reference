@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <root>
-<name>Globals</name>
+<name>List</name>
 
-<category>Structure</category>
+<category></category>
 
 <subcategory></subcategory>
 
@@ -11,22 +11,15 @@
 <example>
 <image></image>
 <code><![CDATA[
-limeGreen = color(152, 250, 144) # Define global variable 'limeGreen'
-
-def drawSquare():
-    fill(limeGreen) # Fill using global variable 'limeGreen'
-    noStroke()
-    rect(0,0,width,height)
-    
-drawSquare()
 ]]></code>
 </example>
 
 <description><![CDATA[
-Global variables are declared outside functions and are accessible throughout the program.  
+
 ]]></description>
 
 <syntax>
+
 </syntax>
 
 <parameter>
@@ -42,6 +35,13 @@ Global variables are declared outside functions and are accessible throughout th
 
 <type></type>
 
-<partof>PYDE</partof>
+<partof></partof>
+
+
+
+
+
+
+
 
 </root>
